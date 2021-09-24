@@ -54,7 +54,7 @@ console.log(crazyDiff(48))
 const boundary = function (n) {
   if (20 <= n <= 100 || (n = 400)) return true;
 };
-console.log(boundary(264));
+console.log(boundary(267));
 
 
 /* EXERCISE 5
