@@ -62,39 +62,73 @@ console.log(boundary(267));
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const strivify = function (string) {
+  if (string = )
+}
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+const check3and7 = function (number) {
+  number > 0;
+  if (number % 3 == 0 || number % 7 == 0) return true;
+  else {
+    return false;
+  }
+};
+
+console.log(check3and7(21));
+
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+const reverseString = function(string) {
+
+
+  const arrayString = string.split("");
+ 
+  
+  const reverseArray = arrayString.reverse();
+
+
+  const joinArray = reverseArray.join("");
+  
+ 
+  return joinArray;
+}
+
+console.log(reverseString("Hello"));
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const upperFirst = function (c1){
+  upperFirst[0].toUpperCase();}
+
+console.log(upperFirst("rotterdam"))
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const cutString
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
-
+const giveMeRandom = function (n) {
+  let arrayNumber = [];
+  for ( i = 0 ; i < n.length; i++) {
+    return arrayNumber.push(Math.random()) * 10;
+  }
+}
+console.log(giveMeRandom(3))
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
