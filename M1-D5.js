@@ -13,8 +13,8 @@ ASSIGNMENT RULES
 */
 
 
-const calcArea = function (l1, l2) {
-    return l1 * l2;
+const calcArea = function (s1, s2) {
+    return s1 * s2;
   };
   
   console.log(calcArea(11, 12));
