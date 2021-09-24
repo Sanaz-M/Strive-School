@@ -27,7 +27,11 @@ const calcArea = function (l1, l2) {
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazySum = function (p1, p2) {
+  if (p1 === p2) return (p1 + p2) * 3;
+  if (p1 !== p2) return p1 + p2;
+};
+console.log(crazySum(6, 7));
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
