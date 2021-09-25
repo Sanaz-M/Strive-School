@@ -66,14 +66,14 @@ const strivify = function(text){
   if(!text.startsWith('Strive'))
        return text+'Strive';
   }
+  
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
 const check3and7 = function (number) {
-  number > 0;
-  if (number % 3 == 0 || number % 7 == 0) return true;
+  if (number > 0; number % 3 === 0 || number % 7 === 0) return true;
   else {
     return false;
   }
@@ -88,7 +88,7 @@ console.log(check3and7(21));
 
 const reverseString = function(string) {
 
-
+//**************  return string.splite("").reverse("").join("");  ************
   const arrayString = string.split("");
  
   
@@ -100,6 +100,7 @@ const reverseString = function(string) {
  
   return joinArray;
 }
+
 
 console.log(reverseString("Hello"));
 
@@ -116,16 +117,19 @@ console.log(upperFirst("rotterdam"))
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-const cutString
-
+const cutString = function (str){
+  return str.slice (1, str.length-1);
+}
+ console.log(cutString(Book))
+ 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
 const giveMeRandom = function (n) {
   let arrayNumber = [];
-  for ( i = 0 ; i < n.length; i++) {
-    return arrayNumber.push(Math.random()) * 10;
+  for ( i = 0 ; i<=n ; i++) {
+    return arrayNumber.push(Math.floor(Math.random() *10);
   }
 }
 console.log(giveMeRandom(3))
