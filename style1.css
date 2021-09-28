@@ -1,0 +1,84 @@
+header{
+    background-color: #ece6e6;
+    border:#3ab2e2;
+}
+
+header h1{
+ text-align: left;
+ font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ font-style: oblique;  
+}
+
+
+
+
+nav{
+    text-align: center;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+nav ul{
+    text-align:left;
+}
+
+
+ul ui{
+    
+    margin: 20;
+    
+}
+
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 140px;
+  border-width: 5px;
+  border-style:solid;
+}
+
+
+img {
+    margin: 10;
+}
+
+.hobies ui {
+    display: block;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10;
+    margin-bottom: 20;
+    margin-top: 30;
+
+}
+
+#productID {
+    font-size: 18px;
+    font-weight:bolder;
+    background-color: rgb(120, 155, 143);
+}
+
+td {
+    text-align: center;
+}
+
+footer {
+
+    margin-top: 40px;
+    height: 400px;
+    width: 100%;
+    background-image: url(D:\Strive School\media\footer-bg.jpg);
+    background-size: 100% 100%;
+}
+
+#new-user {
+    margin-top: 40px;
+    margin-left: 20px;
+    align-self: center;
+    align-content: center;
+}
