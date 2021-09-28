@@ -1,5 +1,4 @@
-let changeTitle= function (){
-   let newTitle = document.getElementsByTagName("h1")
-   newTitle.innerText = "Hi! Welcome to my smart phone shopping page."
- 
+const changeTitle= function (){
+document.querySelector("h1")= "Hi! Welcome to my smart phone shopping page.";
+
 }
