@@ -6,9 +6,9 @@
       }
     </style>
   </head>
-  <body onload="window.onload()">
+  <body>
     <header>
-      <h1 onclick="makeItClickable()">This is the title of the page</h1>
+      <h1 class = "myClass"  onclick="makeItClickable()">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </header>
 
@@ -64,7 +64,7 @@
       */
 
       const addClassToTitle = function () {
-               document.querySelector('myHeading')
+               document.querySelector('h1').classList.remove("myClass")
                
         //
       };
@@ -152,7 +152,7 @@
 
         rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
 
-        document.querySelector('myHeading').style.color = rgbColor
+        document.querySelector('myClass').style.color = rgbColor
         //
       };
 
@@ -180,13 +180,13 @@
       */
 
         
-        let window.onload = function() {
+        window.onload = function() {
 
-        alert ("welcome")
+    
 
         }
         //
-      };
+  
 
       /* EXERCISE 13
        Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
