@@ -146,13 +146,13 @@
            return rand;
            };
             
-            const randArray = [];
+           let randArray = [];
 
             for (let i=0 ; i<=100; i++) { 
-            randArry.push(myRandomArray())
+            randArray.push(myRandomArray())
           }
 
-            console.log(myRandomArray());
+            console.log(randArray);
 
         
         // 27)
@@ -162,7 +162,15 @@
         }
 
         // 28)
-        
+        array28 = [];
+        for(let counter=0; counter<5; counter++){
+          let tempArray = [];
+          for (let i=0 ; i<=10; i++) { 
+            tempArray.push(myRandomArray())
+          }
+          array28.push(tempArray);
+        }
+          console.log(array28);
 
       </script>
 
@@ -183,8 +191,20 @@
           // 31)
           document.getElementById("container")
 
-          //32)
-          getElementsByTagName("td")
+          //32 and 33)
+         let tableColumn= document.getElementsByTagName("td")
+          for (let i=0; i<tableColumn.length; i++){
+            console.log(tableColumn[i].innerText)
+          };
+          
+          // 34)
+          let table = document.getElementById("table");
+          let newRow = table.insertRow(4);
+          let cell0 = newRow.insertCell(0);
+          let cell1 = newRow.insertCell(1);
+          let cell2 = newRow.insertCell(2);
+          let cell3 = newRow.insertCell(3);
+          cell0.innerText= "pic20";
         </script>
 
 <!--
