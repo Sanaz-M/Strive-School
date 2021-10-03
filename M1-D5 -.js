@@ -66,6 +66,9 @@ const strivify = function(text){
   if(!text.startsWith('Strive'))
        return text+'Strive';
   }
+  else {
+    return text;
+  }
   
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
@@ -73,7 +76,8 @@ const strivify = function(text){
 */
 
 const check3and7 = function (number) {
-  if (number > 0; number % 3 === 0 || number % 7 === 0) return true;
+  if (number >= 0 && (number % 3 === 0 || number % 7 === 0)) {
+    return true;}
   else {
     return false;
   }
