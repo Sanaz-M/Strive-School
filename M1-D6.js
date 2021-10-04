@@ -242,7 +242,7 @@ const oldestMovie = function () {
   let result = {Year: 2100}
   for (let i=0; i<movies.length; i++){
   let currentYear= parseInt(movies[i].Year)
-  if(currentYear < result.year){
+  if(currentYear < result.Year){
     result = movies[i];
   }
 
@@ -282,7 +282,7 @@ const onlyTheTitles = function () {
 const onlyInThisMillennium = function () {
   let result = [];
   for (let i=0; i<movies.length; i++){
-    if (parseInt(movies[i].year)> 1999)
+    if (parseInt(movies[i].Year)> 1999)
     return result.push(movies[i])
   }
 
@@ -308,13 +308,27 @@ let getMovieById = function (id){
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
-
+const sumAllTheYears = function(){
+  let sum= 0;
+  for(let i=0; i<movies.length; i++)
+  sum += parseInt(movies[i].Year)
+  return sum
+}
+return sum
 
 
 
 /* EXERCISE 18
     Write a function called searchByTitle which receives a string as a parameter and returns all the movies in the provided movies array which contain that string in the title.
 */
+const searchByTitle = function(str){
+  let result = [];
+  for (let i = 0; i < movies.length; i++)
+  if (movies[i].Title.indexOf(str)!== -1){
+    result.push(movies[i]);
+  }
+  return result
+}
 
 
 
@@ -324,6 +338,21 @@ let getMovieById = function (id){
     this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
     and another array unmatch with all the remaining ones.
 */
+
+const searchAndDivide = function(str){
+  let newObject = {
+    match = [];
+    unmatch = [];
+  }
+  for (let i = 0; i < movies.length; i++)
+  if(movies[i].Title.indexOf(word) !== -1){
+    result.match.push(movies[i]);
+  }
+  else {
+    result.unmatch.push(movies[i]);
+  }
+  return newObject;
+}
 
 
 
