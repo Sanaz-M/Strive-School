@@ -295,12 +295,14 @@ const onlyInThisMillennium = function () {
 */
 
 let getMovieById = function (id){
-  if (id === "tt0167261") return true;
-  else return false;
+  let foundMovie;
+  for(i=0; i<movies.length; i++)
+  if (movies[i].imdbID === id){
+    foundMovie = movies[i];
+  }
+  return foundMovie;
 
 }
-
-console.log(getMovieById("tt0167261"));
 
 
 /* EXERCISE 17
