@@ -112,11 +112,32 @@ console.log(reverseString("Hello"));
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-const upperFirst = function (c1){
-  upperFirst[0].toUpperCase();}
+// const upperFirst = function (str) { //works for one word only
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+//   /* 
+//     let firstChar = str.chatAt(0) 
+//     let uppercaseChar = firstChar.toUpperCase()
+//     let cutString = str.slice(1)
+//     return uppercaseChar + cutString
+//   */
+// };
+// console.log(upperFirst("strivers"));
 
-console.log(upperFirst("rotterdam"))
+const upperFirstPhrase = function(str) { //phrase as param
+  let words = str.split(" ")
+  let finalString = []
+  for(let i = 0; i < words.length; i++) {
+    let firstChar = words[i].charAt(0)
+    console.log(firstChar)
+    let uppercaseChar = firstChar.toUpperCase()
+    let cutString = words[i].slice(1)
+    let finalWord = uppercaseChar + cutString
+    finalString.push(finalWord)
+  }
+  console.log(finalString.join(""))
+}
 
+upperFirstPhrase("hello world")
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */

@@ -84,7 +84,7 @@ console.log(mySkills)
 */
 
 let dice = function (number) {
-  for (number > 0; number <= 6; number++);
+  for (let number > 0; number <= 6; number++);
   return Math.floor(Math.random() * 6);
 };
 console.log(dice());
@@ -239,10 +239,17 @@ let deleteProp = function (obj , str){
 */
 
 const oldestMovie = function () {
-  let integer= parseInt (movies.Year, 10)
-  return Math.min(integer);
+  let result = {Year: 2100}
+  for (let i=0; i<movies.length; i++){
+  let currentYear= parseInt(movies[i].Year)
+  if(currentYear < result.year){
+    result = movies[i];
+  }
+
+  }
+  return result;
 };
-console.log(oldestMovie() + " oldest movie");
+
 
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
@@ -259,19 +266,28 @@ console.log(countMovies())
 */
 
 const onlyTheTitles = function () {
-  return movies.Title;
+  let result= [];
+  for(let i=0; i<movies.length; i++){
+    return result.push(movies[i].Title)
+  }
+
 };
-console.log(onlyTheTitles());
+
 
 
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
 
-const onlyTheTitles = function () {
-  return movies.Title;
+const onlyInThisMillennium = function () {
+  let result = [];
+  for (let i=0; i<movies.length; i++){
+    if (parseInt(movies[i].year)> 1999)
+    return result.push(movies[i])
+  }
+
 };
-console.log(onlyTheTitles());
+
 
 
 /* EXERCISE 16 
