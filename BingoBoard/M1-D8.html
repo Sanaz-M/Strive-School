@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style1.css">
    
 </head>
-<body>
-    <script src="index.js"></script>
+<body onload="boardNumbers()">
     <h1>Bingo Board</h1>
 
     <!-- functional requirments:
@@ -37,17 +36,51 @@
         - keep track of showed numbers
         - 
     -->
-  <table border = "1">
-    <dive id="bingo-numbers">
+  <div class="container-center">
+    <table id="main-board" border = "1">
+  
+    </table>
+  
+    <div id="number-creation">
+      <input type="button" value="Bingo" onclick="" />
+    </div>
+    <ul id="numbers-list">
+      <li></li>
+    </ul>
+  </div>
 
-    </dive> 
-  </table>
+  <script>
+    function mainBoard(){
+      const board = document.querySelector(".main-board");
+      for (let i=0; i<76; i++){
+        board.innerHTML += `<div class='cell'>${i + 1}</div>`;
+      }
+    }
 
-  <div id="number-creation">
-    <input type="button" value="Bingo" onclick="" />
-</div>
-<ul id="numbers-list">
-    <li></li>
-</ul>
+
+    function boardNumbers() {
+    // we want to have 1 to 76 on the board
+    let newArray = [];
+    for (let i=0; i < 76; i++) { 
+      newArray.push(i+1)
+    }
+    return newArray;
+  }
+      
+//         let newNumberNode = document.createElement("li") ;
+//         bingoNumber= newNumberNode.classList.add("number");
+//         newNumberNode.innerText = bingoNumber
+
+//         newNumberNode.onclick = selectNumber
+//         numberContainerNode.appendChild(newNumberNode)
+//     }
+// }
+
+window.onload = function(){
+  mainBoard();
+  boardNumbers();
+}
+
+  </script>
 </body>
 </html>
